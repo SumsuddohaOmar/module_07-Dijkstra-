@@ -4,7 +4,7 @@ vector<pair<int, int>> adj_list[105];
 int dis[105];
 bool visited;
 
-void naive_dijkstra(int src)
+void optimized_dijkstra(int src)
 {
     priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;
     pq.push({0, src});
@@ -49,7 +49,7 @@ int main()
         dis[i] = INT_MAX;
     }
 
-    naive_dijkstra(0);
+    optimized_dijkstra(0);
 
     for (int i = 0; i < n; i++)
         cout << i << " -> " << dis[i] << endl;

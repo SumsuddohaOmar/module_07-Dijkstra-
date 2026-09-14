@@ -47,13 +47,7 @@ int main()
     {
         dis[i] = INT_MAX;
     }
-
-<<<<<<< HEAD
-    opt_dijkstra(0);
-=======
     optimized_dijkstra(0);
->>>>>>> 966ca4a6a571690035425b3219891cdd8ab09142
-
     for (int i = 0; i < n; i++)
         cout << i << " -> " << dis[i] << endl;
 

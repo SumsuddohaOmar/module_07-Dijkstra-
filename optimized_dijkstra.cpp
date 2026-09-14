@@ -3,12 +3,7 @@ using namespace std;
 vector<pair<int, int>> adj_list[105];
 int dis[105];
 bool visited;
-
-<<<<<<< HEAD
-void opt_dijkstra(int src)
-=======
 void optimized_dijkstra(int src)
->>>>>>> 966ca4a6a571690035425b3219891cdd8ab09142
 {
     priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;
     pq.push({0, src});
